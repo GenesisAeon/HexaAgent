@@ -32,8 +32,9 @@ class AgentLoopConfig:
     roles: list[str] = field(default_factory=lambda: ["coordinator", "transform", "philosophy", "ui"])
     initial_state_id: int = 0
     nats_url: str = "nats://localhost:4222"
-    # Simuliertes NATS wenn kein echter Server verfügbar
     mock_nats: bool = True
+    # Schwellenwerte für CREP → Q4-Mapping (überschreibbar via runtime.yaml)
+    crep_thresholds: dict[str, float] | None = None
 
 
 class AgentLoop:
@@ -60,7 +61,9 @@ class AgentLoop:
 
         initial = Q4State.from_id(self.config.initial_state_id)
         self.coordinator = CoordinatorAgent(self.policy, publish_fn, initial)
-        self.transform = TransformAgent(self.policy, publish_fn)
+        self.transform = TransformAgent(
+            self.policy, publish_fn, crep_thresholds=self.config.crep_thresholds
+        )
         self.philosophy = PhilosophyAgent(self.policy, publish_fn)
         self.ui = UIAgent(self.policy, publish_fn)
 
