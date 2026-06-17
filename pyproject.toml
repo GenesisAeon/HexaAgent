@@ -4,8 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hexa-agent"
-version = "0.1.0"
+version = "1.0.0"
 description = "HexaAgent — AI-UI-AI Loop für die GenesisAeon Architektur (Phase 6)"
+authors = [{name = "Johann Römer"}]
+license = {text = "MIT"}
 requires-python = ">=3.11"
 dependencies = []
 
