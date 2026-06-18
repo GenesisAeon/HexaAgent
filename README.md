@@ -7,7 +7,7 @@ ui) built around a deterministic, replayable Q4-state event loop.
 ## Installation
 
 ```bash
-pip install hexa-agent
+pip install genesisaeon-hexaagent
 ```
 
 ## Usage

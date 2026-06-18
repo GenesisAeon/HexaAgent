@@ -1,5 +1,5 @@
 {
-  "title": "hexa-agent — P-HEXA: HexaAgent — AI-UI-AI Loop für die GenesisAeon Architektur",
+  "title": "genesisaeon-hexaagent — P-HEXA: HexaAgent — AI-UI-AI Loop für die GenesisAeon Architektur",
   "description": "<p>HexaAgent — AI-UI-AI Loop für die GenesisAeon Architektur (Phase 6): a six-role agent orchestration framework (coordinator, transform, philosophy, ui) built around a deterministic, replayable Q4-state event loop.</p><p>Part of the <strong>GenesisAeon</strong> ecosystem (P-HEXA, domain: agent framework (6-role orchestration)).</p><p>See <a href=\"https://github.com/GenesisAeon/HexaAgent\">github.com/GenesisAeon/HexaAgent</a> for source, documentation, and reproducibility notebooks.</p>",
   "creators": [
     {
