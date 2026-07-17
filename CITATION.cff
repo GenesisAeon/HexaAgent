@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "genesisaeon-hexaagent"
+version: "1.0.0"
+date-released: "2026-06-17"
+authors:
+  - family-names: Römer
+    given-names: Johann
+repository-code: "https://github.com/GenesisAeon/HexaAgent"
+license: MIT
+abstract: "HexaAgent — AI-UI-AI Loop für die GenesisAeon Architektur (Phase 6)"
+keywords:
+  - GenesisAeon
+  - UTAC
+  - CREP
+  - open-science
